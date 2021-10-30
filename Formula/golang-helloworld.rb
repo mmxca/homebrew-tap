@@ -5,47 +5,43 @@
 class GolangHelloworld < Formula
   desc "Simple Hello World application."
   homepage "https://github.com/mmxca/golang-helloworld"
-  version "0.0.3"
+  version "0.0.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/mmxca/golang-helloworld/releases/download/v0.0.3/golang-helloworld_0.0.3_darwin_arm64.tar.gz"
-      sha256 "f6d8c318b7ece6f44b1c2da8b6d372c57952cf89a2cbe049e9b50da75666f030"
+      url "https://github.com/mmxca/golang-helloworld/releases/download/v0.0.4/golang-helloworld_0.0.4_darwin_arm64.tar.gz"
+      sha256 "d331b7a38c6e359a371e14913f3b1046020b35d918d6f30cfe729ac220c89ab7"
 
       def install
         bin.install "golang-helloworld"
-        ...
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/mmxca/golang-helloworld/releases/download/v0.0.3/golang-helloworld_0.0.3_darwin_amd64.tar.gz"
-      sha256 "a35863d4406c5952821cff7caf717d3ffc9e0b81c4279e0e83afca79edf2b979"
+      url "https://github.com/mmxca/golang-helloworld/releases/download/v0.0.4/golang-helloworld_0.0.4_darwin_amd64.tar.gz"
+      sha256 "e3ac91c32feb53709ccfd4539caf396e2769d4ca5c350699a2963d03ebf4f898"
 
       def install
         bin.install "golang-helloworld"
-        ...
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mmxca/golang-helloworld/releases/download/v0.0.3/golang-helloworld_0.0.3_linux_arm64.tar.gz"
-      sha256 "e0404581be0212a2cd5e7f31f5b478e5313586839c0ce1ed12239d532190ba61"
+      url "https://github.com/mmxca/golang-helloworld/releases/download/v0.0.4/golang-helloworld_0.0.4_linux_arm64.tar.gz"
+      sha256 "17016f0fe799daa7547b0935cde284b208438bbacda07d14333d210d35d975cd"
 
       def install
         bin.install "golang-helloworld"
-        ...
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/mmxca/golang-helloworld/releases/download/v0.0.3/golang-helloworld_0.0.3_linux_amd64.tar.gz"
-      sha256 "758803148144dc22f665481b306ff84d01b1b9b64f832dd247a9e0821d25654e"
+      url "https://github.com/mmxca/golang-helloworld/releases/download/v0.0.4/golang-helloworld_0.0.4_linux_amd64.tar.gz"
+      sha256 "8d82b839506b9b2597ef4994f5fb9f92990323952e4bbda959223f3a63bded27"
 
       def install
         bin.install "golang-helloworld"
-        ...
       end
     end
   end
