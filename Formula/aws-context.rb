@@ -5,21 +5,21 @@
 class AwsContext < Formula
   desc "AWS Context Switcher."
   homepage "https://github.com/mmxca/aws-context"
-  version "0.0.0"
+  version "0.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/mmxca/aws-context/releases/download/v0.0.0/aws-context_0.0.0_darwin_arm64.tar.gz"
-      sha256 "8970c8a74c90eb8d34085be0d422fe1cfe8bfccadadc5d24dac5695b493deb6d"
+      url "https://github.com/mmxca/aws-context/releases/download/v0.0.1/aws-context_0.0.1_darwin_arm64.tar.gz"
+      sha256 "b670e06243e8e575284196b1734a1d3e3f0244ee0cc14c26291a98ce1c59bafe"
 
       def install
         bin.install "aws-context"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/mmxca/aws-context/releases/download/v0.0.0/aws-context_0.0.0_darwin_amd64.tar.gz"
-      sha256 "6e69a7521ac0aeebcbbd999628b16d4e9d05347c20b2ec7fdb390e482ef50385"
+      url "https://github.com/mmxca/aws-context/releases/download/v0.0.1/aws-context_0.0.1_darwin_amd64.tar.gz"
+      sha256 "0a19f2e6e33185e3b62d444df88200310d5482b347a807f95633c5f42c98a4d2"
 
       def install
         bin.install "aws-context"
@@ -29,16 +29,16 @@ class AwsContext < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/mmxca/aws-context/releases/download/v0.0.0/aws-context_0.0.0_linux_amd64.tar.gz"
-      sha256 "63c025d2f01a427320c2a34687f6f205edd5b776fd596b9b76cf9ddbfd60c17a"
+      url "https://github.com/mmxca/aws-context/releases/download/v0.0.1/aws-context_0.0.1_linux_amd64.tar.gz"
+      sha256 "f872a85c6f4b607b353f37437a22b1369306c6577bb89764fb18b2e898fac200"
 
       def install
         bin.install "aws-context"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mmxca/aws-context/releases/download/v0.0.0/aws-context_0.0.0_linux_arm64.tar.gz"
-      sha256 "5b166958abd07941eb04869e8b9e15856490a2013bb174ca18df6c57f7a37785"
+      url "https://github.com/mmxca/aws-context/releases/download/v0.0.1/aws-context_0.0.1_linux_arm64.tar.gz"
+      sha256 "3446b442ed404ddcfb9bfcdf099aee6f95e772336330000fe5c23d3db3b00d7e"
 
       def install
         bin.install "aws-context"
